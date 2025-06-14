@@ -25,16 +25,25 @@ public class App
           emp2.setActive(true);
           emp2.setAbout("bawla");
           
+          Employee emp3=new Employee();
+          emp3.setName("musl");
+          emp3.setAge(14);
+          emp3.setActive(true);
+          emp3.setAbout("bawla");
+          
           Loan loan1=new Loan();
           loan1.setLoan_amount(100000);
           loan1.setEmployee(emp2);
           
           Loan loan2=new Loan();
           loan2.setEmployee(emp2);
+          loan2.setEmployee(emp3);
           loan2.setLoan_amount(450000);
+          
           
           emp2.getLoan().add(loan1);
           emp2.getLoan().add(loan2);
+          emp3.getLoan().add(loan2);
           
          
 //        
